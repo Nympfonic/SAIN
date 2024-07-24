@@ -82,7 +82,7 @@ namespace SAIN.SAINComponent.Classes.EnemyClasses
 
             return new BodyPartRaycast {
                 LOSRaycastHit = new RaycastHit(),
-                ShootRayCastHit = new RaycastHit(),
+                ShootRaycastHit = new RaycastHit(),
                 VisionRaycastHit = new RaycastHit(),
                 CastPoint = castPoint,
                 PartType = BodyPart,
