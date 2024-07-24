@@ -27,6 +27,8 @@ namespace SAIN.SAINComponent.Classes.WeaponFunction
         {
             if (_nextUpdateTime < Time.time) {
                 _nextUpdateTime = Time.time + GRENADE_UPDATE_FREQUENCY;
+                if (_rigidBody == null) 
+                    return;
                 Velocity = _rigidBody.velocity;
                 VelocityMagnitude = Velocity.magnitude;
                 Logger.LogInfo($"Grenade {_grenade.Id} Velocity [{Velocity}] Magnitude: [{VelocityMagnitude}]");
